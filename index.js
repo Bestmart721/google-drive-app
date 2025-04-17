@@ -8,11 +8,11 @@ require('dotenv').config();
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 
-const credentials = require('./client_secret_467903588298-het3b6tu7lgo2i9svc2hr12jnn4f19jv.apps.googleusercontent.com.json');
+const credentials = require('./client_secret_804780876853-vs41283umj4sklham54l2eb7cehhgps0.apps.googleusercontent.com.json');
 const { client_id, client_secret, redirect_uris } = credentials.web;
 
 const oAuth2Client = new google.auth.OAuth2(
-  client_id, client_secret, 'http://localhost:3000/oauth2callback'
+  client_id, client_secret, redirect_uris[0]
 );
 
 let drive;
