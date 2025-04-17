@@ -15,21 +15,21 @@ Built with Node.js, Express, EJS for templating, and the official Google Drive A
 ## ⚙️ Development Setup
 
 1. Clone the repo  
-   ```bash
-   git clone https://github.com/Bestmart721/google-drive-app
-   cd google-drive-app
-   ```
+    ```bash
+    git clone https://github.com/Bestmart721/google-drive-app
+    cd google-drive-app
+    ```
 
 2. Install dependencies  
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 3. Add `.env` file:
-   ```
-   PORT=3000
-   SESSION_SECRET=your-secret
-   ```
+    ```
+    PORT=3000
+    SESSION_SECRET=your-secret
+    ```
 
 4. Place your `credentials.json` from Google Cloud in the project root.
 
@@ -43,6 +43,8 @@ node index.js
 
 Then open [http://localhost:3000](http://localhost:3000) in your browser.  
 The app will prompt for Google authentication on first use.
+
+Alternatively, you can access the deployed version at [https://gull-holy-enormously.ngrok-free.app/](https://gull-holy-enormously.ngrok-free.app/).
 
 ---
 
